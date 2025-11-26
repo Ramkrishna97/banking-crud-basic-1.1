@@ -49,6 +49,7 @@ public class AccountController {
                 AccountDto dto= service.withdraw(id, amount);
                 return ResponseEntity.ok(dto);
     }
+
     @GetMapping("/all")
     public ResponseEntity<List<AccountDto>> findAll(){
         List<AccountDto> accountDtos= service.findAll();
