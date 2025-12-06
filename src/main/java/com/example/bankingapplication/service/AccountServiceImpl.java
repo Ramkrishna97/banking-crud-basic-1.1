@@ -70,8 +70,6 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public void deleteAll() {
         repo.deleteAll();
-//        DropTransaction d=new DropTransaction();
-//        d.dropTable("accounts");
     }
 
 
